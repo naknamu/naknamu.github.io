@@ -128,8 +128,9 @@ body {
   color: var(--black-coral);
   font-size: 1.6rem;
   line-height: 1.7;
-  height: 300vh;
 }
+
+html, body { overflow-x: hidden;}
 
 body.nav-active { overflow: hidden; }
 
@@ -200,6 +201,11 @@ body.nav-active { overflow: hidden; }
 .section-text { font-size: var(--fs-5); }
 
 .section-title { margin-block-end: 16px; }
+
+.grid-list {
+  display: grid;
+  gap: 30px;
+}
 
 /*-----------------------------------*\
   #HEADER
@@ -377,3 +383,45 @@ body.nav-active { overflow: hidden; }
 }
 
 .project-card .btn-text:is(:hover, :focus-visible) { gap: 10px}
+
+
+/*-----------------------------------*\
+  #SKILLS
+\*-----------------------------------*/
+
+.skill { border-block: 1px solid var(--cadet-blue-crayola_a20); }
+
+.skill .title-wrapper { margin-block-end: 10px;}
+
+.skill-card {
+  --padding: 24px;
+  
+  padding: var(--padding);
+  border-radius: var(--radius-8);
+}
+
+.skill-tag {
+  padding-block: 20px;
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-6);
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  border-radius: var(--radius-8);
+  padding-block: 20px;
+}
+
+.slider-item { 
+  min-width: calc(50% - 50px); 
+  scroll-snap-align: start; 
+  text-align: center;
+  padding-inline: 10px;
+}
+
+.slider::-webkit-scrollbar { display: none; }
