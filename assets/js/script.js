@@ -42,3 +42,15 @@ window.addEventListener("scroll", function() {
         header.classList.remove("active")
     }
 })
+
+
+/**
+ * Contact
+ * Clear form when submitted
+ */
+
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+}
