@@ -149,13 +149,14 @@ body.nav-active { overflow: hidden; }
 .container { padding-inline: 16px; }
 
 .social-list {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .social-link {
-    font-size: 2rem;
-    transition: var(--transition-1);
+  font-size: 2rem;
+  transition: var(--transition-1);
 }
 
 .social-link:is(:hover, :focus-visible) {transform: translateY(-3px);}
@@ -424,6 +425,10 @@ body.nav-active { overflow: hidden; }
   scroll-snap-align: start; 
   text-align: center;
   padding-inline: 10px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .slider::-webkit-scrollbar { display: none; }
@@ -475,3 +480,301 @@ textarea.input-field {
 .copyright { margin-block-end: 12px;}
 
 .footer .social-link { color: var(--charcoal); }
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+
+/**
+* responsive for larger than 575px screen
+*/
+
+@media (min-width: 575px) {
+
+/**
+* REUSED STYLE
+*/
+  
+.container {
+  max-width: 540px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+/**
+* PROJECT
+*/
+
+.project-card { --padding: 68px; }
+
+/**
+* SKILL
+*/
+
+.slider-item { 
+  min-width: calc(50% - 110px);
+}
+
+/**
+* CONTACT
+*/
+
+.contact-card { padding: 68px; }
+
+}
+
+/**
+* responsive for larger than 768px screen
+*/
+
+@media (min-width: 768px) {
+
+/**
+* REUSED STYLE
+*/
+
+.container { max-width: 720px; }
+
+.section-text { --fs-5: 2rem; }
+
+/**
+* PROJECT
+*/
+
+.project .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.project .btn { min-width: max-content; }
+
+/**
+* SKILL
+*/
+
+.slider-item {
+  min-width: calc(50% - 210px);
+}
+
+.android {
+  justify-content: center;
+}
+
+.android .w-100 {
+  width: 150px;
+}
+  
+  
+/**
+* CONTACT
+*/
+
+.contact .section-text { --fs-5: 1.8rem; }
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/**
+* FOOTER
+*/
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright { margin-block-end: 0; }
+  
+}
+
+
+/**
+* responsive for large than 992px screen
+*/
+
+@media (min-width: 992px) {
+
+/**
+* CUSTOM PROPERTY
+*/
+
+:root {
+
+/**
+  * spacing
+  */
+
+--section-padding-s: 120px;
+
+}
+
+/**
+* REUSED STYLE
+*/
+
+.container { max-width: 960px; }
+
+/**
+* HEADER
+*/
+
+.nav-open-btn,
+.navbar-top,
+.navbar .wrapper,
+.navbar .overlay { display: none; }
+
+.navbar,
+.navbar.active{
+  all: unset;
+  display: flex;
+  flex-grow: 1;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 36px;
+  margin-inline: auto;
+}
+
+.navbar-link {
+  color: var(--charcoal);
+}
+
+.navbar-link:is(:hover, :focus-visible) { color: var(--sea-blue); }
+
+.navbar .social-link {
+  color: var(--charcoal);
+  font-size: 1.8rem;
+}
+
+.header {
+  top: 45px;
+  max-width: 960px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-inline: 16px;
+  border-radius: var(--radius-8);
+}
+
+.header.active {
+  top: 0;
+  max-width: unset;
+  border-radius: 0;
+}
+
+/**
+* HERO
+*/
+
+.hero { padding-block-start: calc(var(--section-padding-s) + 80px); }
+
+.hero .container {
+  grid-template-columns: 0.8fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.hero-content { text-align: left; }
+
+.hero .btn-wrapper { justify-content: flex-start; }
+
+.project-card-1 {
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+
+/**
+* SKILL
+*/
+
+.slider-item {
+  min-width: calc(50% - 310px);
+}
+
+/**
+* CONTACT
+*/
+
+.contact-card {
+  grid-template-columns: 0.8fr 1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+
+}
+
+
+/**
+* responsive for large than 1200px screen
+*/
+
+@media (min-width: 1200px) {
+
+/**
+* REUSED STYLE
+*/
+
+.container,
+.header { max-width: 1140px; }
+
+/**
+* SKILL
+*/
+
+.game .slider-item .w-100 , .web .slider-item .w-100 { width: 65%; }
+
+.slider-item {
+  min-width: calc(40% - 310px);
+}
+
+/**
+* CONTACT
+*/
+
+  .contact-card { gap: 150px; }
+
+}
+
+
+/**
+ * responsive for large than 1400px screen
+ */
+
+@media (min-width: 1400px) {
+
+/**
+  * REUSED STYLE
+  */
+
+.container,
+.header { max-width: 1320px; }
+
+
+
+/**
+  * HERO
+  */
+
+.hero .container { grid-template-columns: 1fr 0.8fr; }
+
+.hero .section-text { --fs-5: 2.4rem; }
+
+}
+
+
+
+
+
+
+
