@@ -32,6 +32,20 @@
     - preload images
     -->
 
+    <link rel="preload" as="image" href="./assets/images/heart_rounded_profile.png">
+    <link rel="preload" as="image" href="./assets/images/projects/labot_steam.png" imagesrcset="./assets/images/projects/labot_steam_s.png">
+    <link rel="preload" as="image" href="./assets/images/projects/motorstore.png" imagesrcset="./assets/images/projects/motorstore_s.png">
+    <link rel="preload" as="image" href="./assets/images/android/android-studio.svg">
+    <link rel="preload" as="image" href="./assets/images/android/jetpack-compose.png">
+    <link rel="preload" as="image" href="./assets/images/android/kotlin.svg">
+    <link rel="preload" as="image" href="./assets/images/web/html.svg">
+    <link rel="preload" as="image" href="./assets/images/web/css.svg">
+    <link rel="preload" as="image" href="./assets/images/web/javascript.svg">
+    <link rel="preload" as="image" href="./assets/images/web/react.svg">
+    <link rel="preload" as="image" href="./assets/images/web/firebase.svg">
+    <link rel="preload" as="image" href="./assets/images/game/unity-3d.svg">
+    <link rel="preload" as="image" href="./assets/images/game/csharp.svg">
+
 </head>
 
 <body>
@@ -62,7 +76,7 @@
                         <a href="#" class="navbar-link">Projects</a>
                     </li>
                     <li>
-                        <a href="#" class="navbar-link">Blog</a>
+                        <a href="#" class="navbar-link" data-nav-blog>Blog</a>
                     </li>
                     <li>
                         <a href="#" class="navbar-link">About</a>
@@ -121,28 +135,28 @@
             <div class="container">
 
                 <figure class="hero-banner">
-                    <img src="assets/images/heart_rounded_profile.png" alt="Jodel" class="w-100">
+                    <img src="assets/images/heart_rounded_profile.png" alt="Jodel" class="w-100" data-reveal="top">
                 </figure>
 
                 <div class="hero-content">
 
-                    <p class="section-text">
+                    <p class="section-text" data-reveal="top"  data-reveal-delay="0.5s">
                         Hi! I am
                     </p>
 
-                    <h1 class="h1 hero-title">
+                    <h1 class="h1 hero-title" data-reveal="top"  data-reveal-delay="0.75s">
                         Jodel Del Valle
                     </h1>
 
-                    <p class="section-text awesome-title">
+                    <p class="section-text awesome-title" data-reveal="top"  data-reveal-delay="1s">
                         a Software Developer
                     </p>
 
-                    <p class="section-text">
+                    <p class="section-text" data-reveal="top"  data-reveal-delay="1.25s">
                         based in the Philippines.
                     </p>
 
-                    <div class="btn-wrapper">
+                    <div class="btn-wrapper" data-reveal="top"  data-reveal-delay="1.5s">
                         <a href="#" class="btn btn-primary">See my works</a>
 
                         <a href="#" class="btn btn-secondary">Contact me</a>
@@ -160,7 +174,7 @@
         <section class="section project" aria-label="project-label">
             <div class="container">
 
-                <div class="title-wrapper">
+                <div class="title-wrapper" data-reveal="left">
 
                     <div>
                         <h2 class="h2 section-title" id="project-label">My Projects</h2>
@@ -177,8 +191,8 @@
                 <ul class="grid-list">
 
                     <li>
-                        <div class="project-card project-card-1" style="background-color: rgba(0 ,105 ,148 ,0.1)">
-                            <div class="card-content">
+                        <div class="project-card project-card-1" style="background-color: rgba(0, 105, 148, 0.1)">
+                            <div class="card-content" data-reveal="right">
                                 <div class="card-tag" style="color: #006994">Game Development</div>
 
                                 <h3 class="h3 card-title">Legend of Labot: the Golden Pearl</h3>
@@ -189,16 +203,69 @@
                                 </p>
 
                                 <a href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/" class="btn-text">
-                                    <span class="span" style="color: hsl(175, 98%, 24%)">See Project</span>
+                                    <span class="span" style="color: hsl(197, 100%, 29%)">See Project</span>
 
                                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
                                 </a>
                             </div>
 
-                            <figure class="card-banner">
+                            <figure class="card-banner" data-reveal="left">
                                 <a href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/">
-                                    <img src="assets/images/labot_steam.png" alt="steam screenshot of the game" loading="lazy"
-                                    class="w-100">
+                                    <picture>
+                                        <source 
+                                          srcset="assets/images/projects/labot_steam.png"
+                                          media="(min-width: 768px)"
+                                        />
+                                        <source 
+                                          srcset="assets/images/projects/labot_steam_s.png"
+                                          media="(min-width: 300px)"
+                                        />
+                                        <img 
+                                          src="assets/images/projects/labot_steam_s.png" 
+                                          alt="steam screenshot of the game"
+                                          class="w-100"
+                                        />
+                                    </picture>
+                                </a>
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="project-card project-card-2" style="background-color: rgba( 222, 24, 46 , 0.1)">
+                            <div class="card-content" data-reveal="right">
+                                <div class="card-tag" style="color: #db3e50">Web Development</div>
+
+                                <h3 class="h3 card-title">MotorStore</h3>
+
+                                <p class="card-text">
+                                    A simple shopping cart application using React.
+                                </p>
+
+                                <a href="https://github.com/naknamu/shopping-cart" class="btn-text">
+                                    <span class="span" style="color: #db3e50">See Project</span>
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                </a>
+                            </div>
+
+                            <figure class="card-banner" data-reveal="left">
+                                <a href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/">
+                                    <picture>
+                                        <source 
+                                          srcset="assets/images/projects/motorstore.png"
+                                          media="(min-width: 768px)"
+                                        />
+                                        <source 
+                                          srcset="assets/images/projects/motorstore_s.png"
+                                          media="(min-width: 300px)"
+                                        />
+                                        <img 
+                                          src="assets/images/projects/motorstore_s.png" 
+                                          alt="steam screenshot of the game"
+                                          class="w-100"
+                                        />
+                                    </picture>
                                 </a>
                             </figure>
                         </div>
@@ -215,7 +282,7 @@
         <section class="section skill" aria-label="skill-label">
             <div class="container">
 
-                <div class="title-wrapper">
+                <div class="title-wrapper" data-reveal="top">
                     <h2 class="h2 section-title" id="skill-label">My Skills</h2>
 
                     <p class="section-text">
@@ -224,77 +291,85 @@
                     </p>
                 </div>
 
-                
-                <div class="skill-tag" style="color: #006994">Web Development</div>
-                
+                <div data-reveal="left">
 
-                <ul class="slider web" style="background-color: rgba(0 ,105 ,148 ,0.1)">
+                    <div class="skill-tag" style="color: #006994">Web Development</div>
 
-                    <li class="slider-item">
-                      <h3 class="h3 logo-title">HTML</h3>
-                      <img src="assets/images/web/html.svg" width="130" height="40" alt="logo" class="w-100">
-                    </li>
-        
-                    <li class="slider-item">
-                      <h3 class="h3 logo-title">CSS</h3>
-                      <img src="assets/images/web/css.svg" width="130" height="40" alt="logo" class="w-100">
-                    </li>
-        
-                    <li class="slider-item">
-                      <h3 class="h3 logo-title">JS</h3>
-                      <img src="assets/images/web/javascript.svg" width="130" height="40" alt="logo" class="w-100">
-                    </li>
-        
-                    <li class="slider-item">
-                      <h3 class="h3 logo-title">React</h3>
-                      <img src="assets/images/web/react.svg" width="130" height="40" alt="logo" class="w-100">
-                    </li>
-        
-                    <li class="slider-item">
-                      <h3 class="h3 logo-title">Firebase</h3>
-                      <img src="assets/images/web/firebase.svg" width="130" height="40" alt="logo" class="w-100">
-                    </li>
-        
-                  </ul>
+                    <ul class="slider web" style="background-color: rgba(0 ,105 ,148 ,0.1)">
 
-                <div class="skill-tag" style="color: #006994">Game Development</div>
-                
-
-                <ul class="slider game" style="background-color: rgba(0 ,105 ,148 ,0.1); justify-content: center">
-
-                    <li class="slider-item">
-                      <h3 class="h3 logo-title">UNITY</h3>
-                      <img src="assets/images/game/unity-3d.svg" width="130" height="40" alt="logo" class="w-100">
-                    </li>
-        
-                    <li class="slider-item">
-                      <h3 class="h3 logo-title">C#</h3>
-                      <img src="assets/images/game/csharp.svg" width="130" height="40" alt="logo" class="w-100">
-                    </li>
-        
-                  </ul>
-
-                  <div class="skill-tag" style="color: #006994">Android Development</div>
-                
-
-                  <ul class="slider android" style="background-color: rgba(0 ,105 ,148 ,0.1)">
-  
-                      <li class="slider-item">
-                        <h4 class="h4 logo-title">Android Studio</h4>
-                        <img src="assets/images/android/android-studio.svg" width="130" height="40" alt="logo" class="w-100">
-                      </li>
-          
-                      <li class="slider-item">
-                        <h4 class="h4 logo-title">Kotlin</h4>
-                        <img src="assets/images/android/kotlin.svg" width="130" height="40" alt="logo" class="w-100">
-                      </li>
-
-                      <li class="slider-item">
-                        <h4 class="h4 logo-title">Jetpack Compose</h4>
-                        <img src="assets/images/android/jetpack-compose.png" width="130" height="40" alt="logo" class="w-100">
-                      </li>
-          
+                        <li class="slider-item">
+                        <h3 class="h3 logo-title">HTML</h3>
+                        <img src="assets/images/web/html.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
+                        <li class="slider-item">
+                        <h3 class="h3 logo-title">CSS</h3>
+                        <img src="assets/images/web/css.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
+                        <li class="slider-item">
+                        <h3 class="h3 logo-title">JS</h3>
+                        <img src="assets/images/web/javascript.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
+                        <li class="slider-item">
+                        <h3 class="h3 logo-title">React</h3>
+                        <img src="assets/images/web/react.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
+                        <li class="slider-item">
+                        <h3 class="h3 logo-title">Firebase</h3>
+                        <img src="assets/images/web/firebase.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
                     </ul>
+
+                </div>
+                
+                <div data-reveal="right">
+                    
+                    <div class="skill-tag" style="color: #006994">Game Development</div>
+
+                    <ul class="slider game" style="background-color: rgba(0 ,105 ,148 ,0.1); justify-content: center">
+    
+                        <li class="slider-item">
+                          <h3 class="h3 logo-title">UNITY</h3>
+                          <img src="assets/images/game/unity-3d.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
+                        <li class="slider-item">
+                          <h3 class="h3 logo-title">C#</h3>
+                          <img src="assets/images/game/csharp.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
+                      </ul>
+
+                </div>
+
+                <div data-reveal="left">
+
+                    <div class="skill-tag" style="color: #006994">Android Development</div>
+                
+                    <ul class="slider android" style="background-color: rgba(0 ,105 ,148 ,0.1)">
+    
+                        <li class="slider-item">
+                          <h4 class="h4 logo-title">Android Studio</h4>
+                          <img src="assets/images/android/android-studio.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
+                        <li class="slider-item">
+                          <h4 class="h4 logo-title">Kotlin</h4>
+                          <img src="assets/images/android/kotlin.svg" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+  
+                        <li class="slider-item">
+                          <h4 class="h4 logo-title">Jetpack Compose</h4>
+                          <img src="assets/images/android/jetpack-compose.png" width="130" height="40" alt="logo" class="w-100">
+                        </li>
+            
+                      </ul>
+
+                </div>
 
             </div>
         </section>
@@ -308,7 +383,7 @@
 
                 <div class="contact-card" style="background-color: rgba(0 ,105 ,148 ,0.1)">
 
-                    <div class="contact-content">
+                    <div class="contact-content" data-reveal="left">
 
                         <div class="card-icon">
                             <img src="assets/images/send-mail.svg" width="44" height="44" loading="lazy" alt="envelop icon">
@@ -323,7 +398,7 @@
                         </p>
                     </div>
 
-                    <form action="https://formspree.io/f/xjvdrvak" method="POST" class="contact-form">
+                    <form action="https://formspree.io/f/xjvdrvak" method="POST" class="contact-form" data-reveal="right">
 
                         <div class="input-wrapper">
                             <input type="text" name="name" placeholder="Name *" required class="input-field">
