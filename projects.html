@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>naknamu | Projects</title>
+
+    <!-- 
+    - Google font
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+    -->
+
+    <link
+    rel="preload"
+    as="image"
+    href="./assets/images/projects/theSeeker.PNG"
+    imagesrcset="./assets/images/projects/theSeeker_s.png"
+    />
+
+    <!-- 
+    - custom css link
+    -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/projects.css" />
+
+  </head>
+  <body>
+    <!--
+    - HEADER
+    -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">naknamu</a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="index.html" class="logo">naknamu</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link" data-nav-blog>Blog</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">About</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:jodeldelvalle@gmail.com" class="contact-link"
+              >jodeldelvalle@gmail.com</a
+            >
+
+            <a href="tel:09773748593" class="contact-link">+63 9773748593</a>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/naknamu" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.facebook.com/delvalle.jodel"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.reddit.com/user/naknamu" class="social-link">
+                <ion-icon name="logo-reddit"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-overlay></div>
+      </div>
+    </header>
+
+    <!--
+    - All Projects
+    -->
+
+    <section class="section project" aria-label="project-label">
+      <div class="container">
+
+        <div class="title-wrapper" data-reveal="left">
+          <div>
+            <h2 class="h2 section-title" id="project-label">All Projects</h2>
+
+            <p class="section-text">
+              These are all my latest projects.
+            </p>
+          </div>
+        </div>
+
+        <ul class="grid-list">
+
+          <li>
+            <div
+              class="project-card project-card-1"
+              style="background-color: rgba(0, 105, 148, 0.1)"
+            >
+              <div class="card-content" data-reveal="right">
+                <div class="card-tag" style="color: #006994">
+                  Game Development
+                </div>
+
+                <h3 class="h3 card-title">Legend of Labot: the Golden Pearl</h3>
+
+                <p class="card-text">
+                  An action roguelike 2D Platformer game with a cute main
+                  character and a relaxing nature-inspired tropical setting!
+                  Available in Steam for PC platforms.
+                </p>
+
+                <a
+                  href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/"
+                  class="btn-text"
+                >
+                  <span class="span" style="color: hsl(197, 100%, 29%)"
+                    >See Project</span
+                  >
+
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+
+              <figure class="card-banner" data-reveal="left">
+                <a
+                  href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/"
+                >
+                  <picture>
+                    <source
+                      srcset="assets/images/projects/labot_steam.png"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="assets/images/projects/labot_steam_s.png"
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="assets/images/projects/labot_steam_s.png"
+                      alt="steam screenshot of the game"
+                      class="w-100"
+                    />
+                  </picture>
+                </a>
+              </figure>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="project-card project-card-2"
+              style="background-color: rgba(222, 24, 46, 0.1)"
+            >
+              <div class="card-content" data-reveal="right">
+                <div class="card-tag" style="color: #db3e50">
+                  Web Development
+                </div>
+
+                <h3 class="h3 card-title">MotorStore</h3>
+
+                <p class="card-text">
+                  A simple shopping cart application using React.
+                </p>
+
+                <a
+                  href="https://github.com/naknamu/shopping-cart"
+                  class="btn-text"
+                >
+                  <span class="span" style="color: #db3e50">See Project</span>
+
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+
+              <figure class="card-banner" data-reveal="left">
+                <a
+                  href="https://github.com/naknamu/shopping-cart"
+                >
+                  <picture>
+                    <source
+                      srcset="assets/images/projects/motorstore.png"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="assets/images/projects/motorstore_s.png"
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="assets/images/projects/motorstore_s.png"
+                      alt="shopping cart screenshot"
+                      class="w-100"
+                    />
+                  </picture>
+                </a>
+              </figure>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="project-card project-card-3"
+              style="background-color: rgba(21, 128, 61, 0.1)"
+            >
+              <div class="card-content" data-reveal="right">
+                <div class="card-tag" style="color: #15803d">
+                  Web Development
+                </div>
+
+                <h3 class="h3 card-title">CV Builder</h3>
+
+                <p class="card-text">
+                    A CV Builder that instantly updates upon user input.
+                    This application allows users to add or delete experience and education entries.
+                    There is also a button where users can see an example cv and print or save it as PDF.
+                </p>
+
+                <a
+                  href="https://github.com/naknamu/cv-builder"
+                  class="btn-text"
+                >
+                  <span class="span" style="color: #15803d">See Project</span>
+
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+
+              <figure class="card-banner" data-reveal="left">
+                <a
+                  href="https://github.com/naknamu/cv-builder"
+                >
+                  <picture>
+                    <img
+                      src="assets/images/projects/cv-builder.PNG"
+                      alt="cv builder "
+                      class="w-100"
+                    />
+                  </picture>
+                </a>
+              </figure>
+            </div>
+          </li>
+
+          <li>
+            <div
+              class="project-card project-card-4"
+              style="background-color: rgb(183, 48, 50, 0.1)"
+            >
+              <div class="card-content" data-reveal="right">
+                <div class="card-tag" style="color: rgb(183, 48, 50)">
+                  Web Development
+                </div>
+
+                <h3 class="h3 card-title">theSeeker</h3>
+
+                <p class="card-text">
+                    A Wheres Waldo type of game where you must locate a character in a large picture 
+                    with lots of characters in the fastest amount of time. A full stack application 
+                    using React and Firebase.
+                </p>
+
+                <a
+                  href="https://naknamu.github.io/theSeeker/"
+                  class="btn-text"
+                >
+                  <span class="span" style="color: rgb(183, 48, 50)">See Project</span>
+
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    aria-hidden="true"
+                  ></ion-icon>
+                </a>
+              </div>
+
+              <figure class="card-banner" data-reveal="left">
+                <a
+                  href="https://naknamu.github.io/theSeeker/"
+                >
+                <picture>
+                    <source
+                      srcset="assets/images/projects/theSeeker.PNG"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="assets/images/projects/theSeeker_s.png"
+                      media="(min-width: 300px)"
+                    />
+                    <img
+                      src="assets/images/projects/theSeeker_s.png"
+                      alt="theSeeker screenshot"
+                      class="w-100"
+                    />
+                  </picture>
+                </a>
+              </figure>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- 
+    - FOOTER
+    -->
+
+    <footer class="footer">
+        <div class="container">
+          <div class="copyright">© 2023 naknamu. All rights reserved.</div>
+  
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/naknamu" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/delvalle.jodel"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.reddit.com/user/naknamu" class="social-link">
+                <ion-icon name="logo-reddit"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+    <!-- 
+    - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

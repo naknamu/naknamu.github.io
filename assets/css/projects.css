@@ -1,0 +1,28 @@
+.project {
+    padding-block-start: calc(var(--section-padding-s) + 50px);
+}
+
+/**
+* responsive for large than 992px screen
+*/
+
+@media (min-width: 992px) {
+
+.project-card-3,
+  .project-card-4 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  :is(.project-card-3, .project-card-4) .card-content {
+    width: 33.33%;
+  }
+
+  :is(.project-card-3, .project-card-4) .card-banner {
+    width: 66.66%;
+  }
+
+  .project-card-4 .card-content {
+    order: 1;
+  }
+}

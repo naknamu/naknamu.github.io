@@ -1,124 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 
     - primary meta tags
     -->
     <title>naknamu - I'm Jodel Del Valle, a Software Developer.</title>
-    <meta name="title" content="naknamu - I'm Jodel Del Valle, a Software Developer.">
-    <meta name="description" content="This is my personal portfolio">
+    <meta
+      name="title"
+      content="naknamu - I'm Jodel Del Valle, a Software Developer."
+    />
+    <meta name="description" content="This is my personal portfolio" />
 
     <!-- 
     - favicon
     -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 
     <!-- 
     - Google font
     -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
     <!-- 
     - custom css link
     -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- 
     - preload images
     -->
 
-    <link rel="preload" as="image" href="./assets/images/heart_rounded_profile.png">
-    <link rel="preload" as="image" href="./assets/images/projects/labot_steam.png" imagesrcset="./assets/images/projects/labot_steam_s.png">
-    <link rel="preload" as="image" href="./assets/images/projects/motorstore.png" imagesrcset="./assets/images/projects/motorstore_s.png">
-    <link rel="preload" as="image" href="./assets/images/android/android-studio.svg">
-    <link rel="preload" as="image" href="./assets/images/android/jetpack-compose.png">
-    <link rel="preload" as="image" href="./assets/images/android/kotlin.svg">
-    <link rel="preload" as="image" href="./assets/images/web/html.svg">
-    <link rel="preload" as="image" href="./assets/images/web/css.svg">
-    <link rel="preload" as="image" href="./assets/images/web/javascript.svg">
-    <link rel="preload" as="image" href="./assets/images/web/react.svg">
-    <link rel="preload" as="image" href="./assets/images/web/firebase.svg">
-    <link rel="preload" as="image" href="./assets/images/game/unity-3d.svg">
-    <link rel="preload" as="image" href="./assets/images/game/csharp.svg">
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/heart_rounded_profile.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/projects/labot_steam.png"
+      imagesrcset="./assets/images/projects/labot_steam_s.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/projects/motorstore.png"
+      imagesrcset="./assets/images/projects/motorstore_s.png"
+    />
+    <!-- <link
+      rel="preload"
+      as="image"
+      href="./assets/images/android/android-studio.svg"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/android/jetpack-compose.png"
+    />
+    <link rel="preload" as="image" href="./assets/images/android/kotlin.svg" /> -->
+    <link rel="preload" as="image" href="./assets/images/web/html.svg" />
+    <link rel="preload" as="image" href="./assets/images/web/css.svg" />
+    <link rel="preload" as="image" href="./assets/images/web/javascript.svg" />
+    <link rel="preload" as="image" href="./assets/images/web/react.svg" />
+    <link rel="preload" as="image" href="./assets/images/web/firebase.svg" />
+    <link rel="preload" as="image" href="./assets/images/game/unity-3d.svg" />
+    <link rel="preload" as="image" href="./assets/images/game/csharp.svg" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!--
     - HEADER
     -->
 
     <header class="header" data-header>
-        <div class="container">
+      <div class="container">
+        <a href="index.html" class="logo">naknamu</a>
 
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
             <a href="index.html" class="logo">naknamu</a>
 
-            <nav class="navbar" data-navbar>
-
-                <div class="navbar-top">
-                    <a href="index.html" class="logo">naknamu</a>
-                    
-                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-                    </button>
-                </div>
-
-                <ul class="navbar-list">
-                    <li>
-                        <a href="index.html" class="navbar-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-link">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-link" data-nav-blog>Blog</a>
-                    </li>
-                    <li>
-                        <a href="#" class="navbar-link">About</a>
-                    </li>
-                </ul>
-
-                <div class="wrapper">
-                    <a href="mailto:jodeldelvalle@gmail.com" class="contact-link">jodeldelvalle@gmail.com</a>
-
-                    <a href="tel:09773748593" class="contact-link">+63 9773748593</a>
-                </div>
-
-                <ul class="social-list">
-
-                    <li>
-                        <a href="https://github.com/naknamu" class="social-link">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.facebook.com/delvalle.jodel" class="social-link">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.reddit.com/user/naknamu" class="social-link">
-                            <ion-icon name="logo-reddit"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-
-            </nav>
-
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
             </button>
+          </div>
 
-            <div class="overlay" data-overlay></div>
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="projects.html" class="navbar-link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link" data-nav-blog>Blog</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">About</a>
+            </li>
+          </ul>
 
-        </div>
+          <div class="wrapper">
+            <a href="mailto:jodeldelvalle@gmail.com" class="contact-link"
+              >jodeldelvalle@gmail.com</a
+            >
+
+            <a href="tel:09773748593" class="contact-link">+63 9773748593</a>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/naknamu" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.facebook.com/delvalle.jodel"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.reddit.com/user/naknamu" class="social-link">
+                <ion-icon name="logo-reddit"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-overlay></div>
+      </div>
     </header>
 
     <!--
@@ -126,293 +160,420 @@
     -->
 
     <main>
-        
-        <!--
+      <!--
         - HERO
         -->
-        
-        <section class="section hero" aria-label="home">
-            <div class="container">
 
-                <figure class="hero-banner">
-                    <img src="assets/images/heart_rounded_profile.png" alt="Jodel" class="w-100" data-reveal="top">
-                </figure>
+      <section class="section hero" aria-label="home">
+        <div class="container">
+          <figure class="hero-banner">
+            <img
+              src="assets/images/heart_rounded_profile.png"
+              alt="Jodel"
+              class="w-100"
+              data-reveal="top"
+            />
+          </figure>
 
-                <div class="hero-content">
+          <div class="hero-content">
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.5s">
+              Hi! I am
+            </p>
 
-                    <p class="section-text" data-reveal="top"  data-reveal-delay="0.5s">
-                        Hi! I am
-                    </p>
+            <h1
+              class="h1 hero-title"
+              data-reveal="top"
+              data-reveal-delay="0.75s"
+            >
+              Jodel Del Valle
+            </h1>
 
-                    <h1 class="h1 hero-title" data-reveal="top"  data-reveal-delay="0.75s">
-                        Jodel Del Valle
-                    </h1>
+            <p
+              class="section-text awesome-title"
+              data-reveal="top"
+              data-reveal-delay="1s"
+            >
+              a Software Developer
+            </p>
 
-                    <p class="section-text awesome-title" data-reveal="top"  data-reveal-delay="1s">
-                        a Software Developer
-                    </p>
+            <p class="section-text" data-reveal="top" data-reveal-delay="1.25s">
+              based in the Philippines.
+            </p>
 
-                    <p class="section-text" data-reveal="top"  data-reveal-delay="1.25s">
-                        based in the Philippines.
-                    </p>
-
-                    <div class="btn-wrapper" data-reveal="top"  data-reveal-delay="1.5s">
+            <!-- <div class="btn-wrapper" data-reveal="top"  data-reveal-delay="1.5s">
                         <a href="#" class="btn btn-primary">See my works</a>
 
                         <a href="#" class="btn btn-secondary">Contact me</a>
-                    </div>
+                    </div> -->
+          </div>
+        </div>
+      </section>
 
-                </div>
-            </div>
-
-        </section>
-
-        <!-- 
+      <!-- 
         - PROJECT
         -->
 
-        <section class="section project" aria-label="project-label">
-            <div class="container">
+      <section class="section project" aria-label="project-label">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="left">
+            <div>
+              <h2 class="h2 section-title" id="project-label">My Projects</h2>
 
-                <div class="title-wrapper" data-reveal="left">
+              <p class="section-text">
+                These are my humble projects created with love.
+              </p>
+            </div>
 
-                    <div>
-                        <h2 class="h2 section-title" id="project-label">My Projects</h2>
+            <a href="projects.html" class="btn btn-secondary"
+              >See All Projects</a
+            >
+          </div>
 
-                        <p class="section-text">
-                            These are my humble projects created with love.
-                        </p>
-                    </div>
+          <ul class="grid-list">
 
-                    <a href="#" class="btn btn-secondary">See All Projects</a>
+            <li>
+              <div
+                class="project-card project-card-1"
+                style="background-color: rgba(0, 105, 148, 0.1)"
+              >
+                <div class="card-content" data-reveal="right">
+                  <div class="card-tag" style="color: #006994">
+                    Game Development
+                  </div>
 
+                  <h3 class="h3 card-title">
+                    Legend of Labot: the Golden Pearl
+                  </h3>
+
+                  <p class="card-text">
+                    An action roguelike 2D Platformer game with a cute main
+                    character and a relaxing nature-inspired tropical setting!
+                    Available in Steam for PC platforms.
+                  </p>
+
+                  <a
+                    href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/"
+                    class="btn-text"
+                  >
+                    <span class="span" style="color: hsl(197, 100%, 29%)"
+                      >See Project</span
+                    >
+
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
                 </div>
 
-                <ul class="grid-list">
+                <figure class="card-banner" data-reveal="left">
+                  <a
+                    href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/"
+                  >
+                    <picture>
+                      <source
+                        srcset="assets/images/projects/labot_steam.png"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="assets/images/projects/labot_steam_s.png"
+                        media="(min-width: 300px)"
+                      />
+                      <img
+                        src="assets/images/projects/labot_steam_s.png"
+                        alt="steam screenshot of the game"
+                        class="w-100"
+                      />
+                    </picture>
+                  </a>
+                </figure>
+              </div>
+            </li>
 
-                    <li>
-                        <div class="project-card project-card-1" style="background-color: rgba(0, 105, 148, 0.1)">
-                            <div class="card-content" data-reveal="right">
-                                <div class="card-tag" style="color: #006994">Game Development</div>
+            <li>
+              <div
+                class="project-card project-card-2"
+                style="background-color: rgba(222, 24, 46, 0.1)"
+              >
+                <div class="card-content" data-reveal="right">
+                  <div class="card-tag" style="color: #db3e50">
+                    Web Development
+                  </div>
 
-                                <h3 class="h3 card-title">Legend of Labot: the Golden Pearl</h3>
+                  <h3 class="h3 card-title">MotorStore</h3>
 
-                                <p class="card-text">
-                                    An action roguelike 2D Platformer game with a cute main character and 
-                                    a relaxing nature-inspired tropical setting! Available in Steam for PC platforms.
-                                </p>
+                  <p class="card-text">
+                    A simple shopping cart application using React.
+                  </p>
 
-                                <a href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/" class="btn-text">
-                                    <span class="span" style="color: hsl(197, 100%, 29%)">See Project</span>
+                  <a
+                    href="https://github.com/naknamu/shopping-cart"
+                    class="btn-text"
+                  >
+                    <span class="span" style="color: #db3e50">See Project</span>
 
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </div>
+                    <ion-icon
+                      name="arrow-forward-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+                  </a>
+                </div>
 
-                            <figure class="card-banner" data-reveal="left">
-                                <a href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/">
-                                    <picture>
-                                        <source 
-                                          srcset="assets/images/projects/labot_steam.png"
-                                          media="(min-width: 768px)"
-                                        />
-                                        <source 
-                                          srcset="assets/images/projects/labot_steam_s.png"
-                                          media="(min-width: 300px)"
-                                        />
-                                        <img 
-                                          src="assets/images/projects/labot_steam_s.png" 
-                                          alt="steam screenshot of the game"
-                                          class="w-100"
-                                        />
-                                    </picture>
-                                </a>
-                            </figure>
-                        </div>
-                    </li>
+                <figure class="card-banner" data-reveal="left">
+                  <a
+                    href="https://github.com/naknamu/shopping-cart"
+                  >
+                    <picture>
+                      <source
+                        srcset="assets/images/projects/motorstore.png"
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="assets/images/projects/motorstore_s.png"
+                        media="(min-width: 300px)"
+                      />
+                      <img
+                        src="assets/images/projects/motorstore_s.png"
+                        alt="shopping cart screenshot"
+                        class="w-100"
+                      />
+                    </picture>
+                  </a>
+                </figure>
+              </div>
+            </li>
 
-                    <li>
-                        <div class="project-card project-card-2" style="background-color: rgba( 222, 24, 46 , 0.1)">
-                            <div class="card-content" data-reveal="right">
-                                <div class="card-tag" style="color: #db3e50">Web Development</div>
+          </ul>
+        </div>
+      </section>
 
-                                <h3 class="h3 card-title">MotorStore</h3>
-
-                                <p class="card-text">
-                                    A simple shopping cart application using React.
-                                </p>
-
-                                <a href="https://github.com/naknamu/shopping-cart" class="btn-text">
-                                    <span class="span" style="color: #db3e50">See Project</span>
-
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </div>
-
-                            <figure class="card-banner" data-reveal="left">
-                                <a href="https://store.steampowered.com/app/1753160/Legend_of_Labot_The_Golden_Pearl/">
-                                    <picture>
-                                        <source 
-                                          srcset="assets/images/projects/motorstore.png"
-                                          media="(min-width: 768px)"
-                                        />
-                                        <source 
-                                          srcset="assets/images/projects/motorstore_s.png"
-                                          media="(min-width: 300px)"
-                                        />
-                                        <img 
-                                          src="assets/images/projects/motorstore_s.png" 
-                                          alt="steam screenshot of the game"
-                                          class="w-100"
-                                        />
-                                    </picture>
-                                </a>
-                            </figure>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </section>
-
-        <!-- 
+      <!-- 
         - SKILLS
         -->
 
-        <section class="section skill" aria-label="skill-label">
-            <div class="container">
+      <section class="section skill" aria-label="skill-label">
+        <div class="container">
+          <div class="title-wrapper" data-reveal="top">
+            <h2 class="h2 section-title" id="skill-label">My Skills</h2>
 
-                <div class="title-wrapper" data-reveal="top">
-                    <h2 class="h2 section-title" id="skill-label">My Skills</h2>
+            <p class="section-text">
+              Here are programming languages and technologies that I have
+              learned and refined to hone my craft over the years.
+            </p>
+          </div>
 
-                    <p class="section-text">
-                        Here are programming languages and technologies that I have learned 
-                        and refined to hone my craft over the years.
-                    </p>
-                </div>
+          <div data-reveal="left">
+            <div class="skill-tag" style="color: #006994">Web Development</div>
 
-                <div data-reveal="left">
+            <ul
+              class="slider web"
+              style="background-color: rgba(0, 105, 148, 0.1)"
+            >
+              <li class="slider-item">
+                <h3 class="h3 logo-title">HTML</h3>
+                <img
+                  src="assets/images/web/html.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
 
-                    <div class="skill-tag" style="color: #006994">Web Development</div>
+              <li class="slider-item">
+                <h3 class="h3 logo-title">CSS</h3>
+                <img
+                  src="assets/images/web/css.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
 
-                    <ul class="slider web" style="background-color: rgba(0 ,105 ,148 ,0.1)">
+              <li class="slider-item">
+                <h3 class="h3 logo-title">JS</h3>
+                <img
+                  src="assets/images/web/javascript.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
 
-                        <li class="slider-item">
-                        <h3 class="h3 logo-title">HTML</h3>
-                        <img src="assets/images/web/html.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                        <li class="slider-item">
-                        <h3 class="h3 logo-title">CSS</h3>
-                        <img src="assets/images/web/css.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                        <li class="slider-item">
-                        <h3 class="h3 logo-title">JS</h3>
-                        <img src="assets/images/web/javascript.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                        <li class="slider-item">
-                        <h3 class="h3 logo-title">React</h3>
-                        <img src="assets/images/web/react.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                        <li class="slider-item">
-                        <h3 class="h3 logo-title">Firebase</h3>
-                        <img src="assets/images/web/firebase.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                    </ul>
+              <li class="slider-item">
+                <h3 class="h3 logo-title">React</h3>
+                <img
+                  src="assets/images/web/react.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
 
-                </div>
-                
-                <div data-reveal="right">
-                    
-                    <div class="skill-tag" style="color: #006994">Game Development</div>
+              <li class="slider-item">
+                <h3 class="h3 logo-title">Firebase</h3>
+                <img
+                  src="assets/images/web/firebase.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
+            </ul>
+          </div>
 
-                    <ul class="slider game" style="background-color: rgba(0 ,105 ,148 ,0.1); justify-content: center">
-    
-                        <li class="slider-item">
-                          <h3 class="h3 logo-title">UNITY</h3>
-                          <img src="assets/images/game/unity-3d.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                        <li class="slider-item">
-                          <h3 class="h3 logo-title">C#</h3>
-                          <img src="assets/images/game/csharp.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                      </ul>
+          <div data-reveal="right">
+            <div class="skill-tag" style="color: #006994">Game Development</div>
 
-                </div>
+            <ul
+              class="slider game"
+              style="
+                background-color: rgba(0, 105, 148, 0.1);
+                justify-content: center;
+              "
+            >
+              <li class="slider-item">
+                <h3 class="h3 logo-title">UNITY</h3>
+                <img
+                  src="assets/images/game/unity-3d.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
 
-                <div data-reveal="left">
+              <li class="slider-item">
+                <h3 class="h3 logo-title">C#</h3>
+                <img
+                  src="assets/images/game/csharp.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
+            </ul>
+          </div>
 
-                    <div class="skill-tag" style="color: #006994">Android Development</div>
-                
-                    <ul class="slider android" style="background-color: rgba(0 ,105 ,148 ,0.1)">
-    
-                        <li class="slider-item">
-                          <h4 class="h4 logo-title">Android Studio</h4>
-                          <img src="assets/images/android/android-studio.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                        <li class="slider-item">
-                          <h4 class="h4 logo-title">Kotlin</h4>
-                          <img src="assets/images/android/kotlin.svg" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-  
-                        <li class="slider-item">
-                          <h4 class="h4 logo-title">Jetpack Compose</h4>
-                          <img src="assets/images/android/jetpack-compose.png" width="130" height="40" alt="logo" class="w-100">
-                        </li>
-            
-                      </ul>
-
-                </div>
-
+          <!-- <div data-reveal="left">
+            <div class="skill-tag" style="color: #006994">
+              Android Development
             </div>
-        </section>
 
-        <!-- 
+            <ul
+              class="slider android"
+              style="background-color: rgba(0, 105, 148, 0.1)"
+            >
+              <li class="slider-item">
+                <h4 class="h4 logo-title">Android Studio</h4>
+                <img
+                  src="assets/images/android/android-studio.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
+
+              <li class="slider-item">
+                <h4 class="h4 logo-title">Kotlin</h4>
+                <img
+                  src="assets/images/android/kotlin.svg"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
+
+              <li class="slider-item">
+                <h4 class="h4 logo-title">Jetpack Compose</h4>
+                <img
+                  src="assets/images/android/jetpack-compose.png"
+                  width="130"
+                  height="40"
+                  alt="logo"
+                  class="w-100"
+                />
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- 
         - CONTACT
         -->
 
-        <section class="section contact" aria-label="contact">
-            <div class="container">
+      <section class="section contact" aria-label="contact">
+        <div class="container">
+          <div
+            class="contact-card"
+            style="background-color: rgba(0, 105, 148, 0.1)"
+          >
+            <div class="contact-content" data-reveal="left">
+              <div class="card-icon">
+                <img
+                  src="assets/images/send-mail.svg"
+                  width="44"
+                  height="44"
+                  loading="lazy"
+                  alt="envelop icon"
+                />
+              </div>
 
-                <div class="contact-card" style="background-color: rgba(0 ,105 ,148 ,0.1)">
+              <h2 class="h2 section-title">
+                Do you want me to create your next app and website?
+              </h2>
 
-                    <div class="contact-content" data-reveal="left">
-
-                        <div class="card-icon">
-                            <img src="assets/images/send-mail.svg" width="44" height="44" loading="lazy" alt="envelop icon">
-                          </div>
-
-                        <h2 class="h2 section-title">
-                            Do you want me to create your next app and website?
-                        </h2>
-
-                        <p class="section-text">
-                            Reach out to me through this form and I’ll get back to you shortly. Price is negotiable!
-                        </p>
-                    </div>
-
-                    <form action="https://formspree.io/f/xjvdrvak" method="POST" class="contact-form" data-reveal="right">
-
-                        <div class="input-wrapper">
-                            <input type="text" name="name" placeholder="Name *" required class="input-field">
-                            <input type="email" name="email_address" placeholder="Email *" required class="input-field">
-                        </div>
-
-                        <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
-
-                        <button type="submit" class="btn btn-secondary">Send Message</button>
-                    </form>
-                </div>
+              <p class="section-text">
+                Reach out to me through this form and I’ll get back to you
+                shortly. Price is negotiable!
+              </p>
             </div>
-        </section>
 
+            <form
+              action="https://formspree.io/f/xjvdrvak"
+              method="POST"
+              class="contact-form"
+              data-reveal="right"
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name *"
+                  required
+                  class="input-field"
+                />
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Email *"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <textarea
+                name="message"
+                placeholder="Message *"
+                required
+                class="input-field"
+              ></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- 
@@ -420,34 +581,31 @@
     -->
 
     <footer class="footer">
-        <div class="container">
+      <div class="container">
+        <div class="copyright">© 2023 naknamu. All rights reserved.</div>
 
-            <div class="copyright">
-                © 2023 naknamu. All rights reserved.
-            </div>
-
-            <ul class="social-list">
-
-                <li>
-                    <a href="https://github.com/naknamu" class="social-link">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/delvalle.jodel" class="social-link">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.reddit.com/user/naknamu" class="social-link">
-                        <ion-icon name="logo-reddit"></ion-icon>
-                      </a>
-                </li>
-                
-            </ul>
-        </div>
+        <ul class="social-list">
+          <li>
+            <a href="https://github.com/naknamu" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/delvalle.jodel"
+              class="social-link"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/naknamu" class="social-link">
+              <ion-icon name="logo-reddit"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
-
 
     <!-- 
     - custom js link
@@ -457,9 +615,13 @@
     <!-- 
     - ionicon link
     -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
