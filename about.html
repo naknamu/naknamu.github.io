@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>naknamu | Projects</title>
+
+    <!-- 
+    - Google font
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+    -->
+
+    <!-- 
+    - custom css link
+    -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+  </head>
+  <body class="light-theme">
+    <!--
+    - HEADER
+    -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="index.html" class="logo">naknamu</a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="index.html" class="logo">naknamu</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link">Home</a>
+            </li>
+            <li>
+              <a href="projects.html" class="navbar-link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link" data-nav-blog>Blog</a>
+            </li>
+            <li>
+              <a href="about.html" class="navbar-link">About</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:jodeldelvalle@gmail.com" class="contact-link"
+              >jodeldelvalle@gmail.com</a
+            >
+
+            <a href="tel:09773748593" class="contact-link">+63 9773748593</a>
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/naknamu" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.facebook.com/delvalle.jodel"
+                class="social-link"
+              >
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.reddit.com/user/naknamu" class="social-link">
+                <ion-icon name="logo-reddit"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="btn-group">
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-overlay></div>
+      </div>
+    </header>
+
+    <!--
+    - MAIN
+    -->
+
+    <main>
+      <section class="section about" aria-label="about label">
+        <div class="container">
+          <!--
+            - Introduction
+            -->
+
+          <div class="title-wrapper" data-reveal="left">
+            <h2 class="h2 section-title" id="project-label">About Me</h2>
+
+            <p class="section-text">
+              Welcome to my little space on the internet.
+            </p>
+
+            <p class="section-text">
+              I don't usually share stuff related to me because I'm a little bit
+              shy in that regards.
+            </p>
+
+            <p class="section-text">
+              However, for the sake of this portfolio, I will tell a little
+              about myself. *fingers crossed*
+            </p>
+          </div>
+
+          <!--
+            - Background
+            -->
+
+          <div class="content-wrapper">
+            <h3 class="h3 section-title">A little background</h3>
+
+            <p class="section-text">
+              I was born and raised in the province of Catanduanes in Bicol
+              Region, Philippines.
+            </p>
+
+            <p class="section-text">
+              However, I completed my bachelor's degree in Electronics
+              Engineering
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+    - FOOTER
+    -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright">© 2023 naknamu. All rights reserved.</div>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://github.com/naknamu" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/delvalle.jodel"
+              class="social-link"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.reddit.com/user/naknamu" class="social-link">
+              <ion-icon name="logo-reddit"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+    -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

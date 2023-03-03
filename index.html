@@ -78,7 +78,7 @@
     <link rel="preload" as="image" href="./assets/images/game/csharp.svg" />
   </head>
 
-  <body>
+  <body class="light-theme">
     <!--
     - HEADER
     -->
@@ -111,7 +111,7 @@
               <a href="#" class="navbar-link" data-nav-blog>Blog</a>
             </li>
             <li>
-              <a href="#" class="navbar-link">About</a>
+              <a href="about.html" class="navbar-link">About</a>
             </li>
           </ul>
 
@@ -147,9 +147,16 @@
           </ul>
         </nav>
 
-        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-        </button>
+        <div class="btn-group">
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
 
         <div class="overlay" data-overlay></div>
       </div>
@@ -164,7 +171,7 @@
         - HERO
         -->
 
-      <section class="section hero" aria-label="home">
+      <section class="section hero light" aria-label="home">
         <div class="container">
           <figure class="hero-banner">
             <img
@@ -213,7 +220,7 @@
         - PROJECT
         -->
 
-      <section class="section project" aria-label="project-label">
+      <section class="section project light" aria-label="project-label">
         <div class="container">
           <div class="title-wrapper" data-reveal="left">
             <div>
@@ -230,7 +237,6 @@
           </div>
 
           <ul class="grid-list">
-
             <li>
               <div
                 class="project-card project-card-1"
@@ -320,9 +326,7 @@
                 </div>
 
                 <figure class="card-banner" data-reveal="left">
-                  <a
-                    href="https://github.com/naknamu/shopping-cart"
-                  >
+                  <a href="https://github.com/naknamu/shopping-cart">
                     <picture>
                       <source
                         srcset="assets/images/projects/motorstore.png"
@@ -342,7 +346,6 @@
                 </figure>
               </div>
             </li>
-
           </ul>
         </div>
       </section>
@@ -501,8 +504,8 @@
                   class="w-100"
                 />
               </li>
-            </ul> -->
-          </div>
+            </ul> 
+          </div> -->
         </div>
       </section>
 

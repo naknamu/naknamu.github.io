@@ -81,3 +81,26 @@ for (let i = 0, len = revealDelayElements.length; i < len; i++) {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
+
+/**
+ * Theme Toggler
+ *
+ */
+
+const themeBtn = document.querySelectorAll(".theme-btn");
+
+for (let i = 0; i < themeBtn.length; i++) {
+  themeBtn[i].addEventListener("click", function () {
+    //toggle `light-theme` and `dark-theme` class from body`
+    //when `theme-btn is clicked
+    document.body.classList.toggle("light-theme");
+    document.body.classList.toggle("dark-theme");
+
+    for (let i = 0; i < themeBtn.length; i++) {
+      //When the `theme-btn` is clicked
+      //it toggles classes between `light` and `dark` for all `theme-btn`
+      themeBtn[i].classList.toggle("light");
+      themeBtn[i].classList.toggle("dark");
+    }
+  });
+}

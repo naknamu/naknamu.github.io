@@ -1,5 +1,5 @@
 .project {
-    padding-block-start: calc(var(--section-padding-s) + 50px);
+  padding-block-start: calc(var(--section-padding-s) + 50px);
 }
 
 /**
@@ -7,8 +7,7 @@
 */
 
 @media (min-width: 992px) {
-
-.project-card-3,
+  .project-card-3,
   .project-card-4 {
     flex-direction: row;
     align-items: center;
