@@ -2,6 +2,10 @@
   padding-block-start: calc(var(--section-padding-s) + 50px);
 }
 
-.title-wrapper .section-text {
-  padding-block: calc(var(--section-padding-s) - 60px);
+.section-text {
+  padding-block: 12px
+}
+
+.section-title {
+  margin-block: 16px;
 }

@@ -96,11 +96,36 @@ for (let i = 0; i < themeBtn.length; i++) {
     document.body.classList.toggle("light-theme");
     document.body.classList.toggle("dark-theme");
 
+    //store to local storage
+    if (document.body.classList.contains("light-theme")) {
+      localStorage.setItem("theme", "light-theme");
+    } else {
+      localStorage.setItem("theme", "dark-theme");
+    }
+
     for (let i = 0; i < themeBtn.length; i++) {
       //When the `theme-btn` is clicked
       //it toggles classes between `light` and `dark` for all `theme-btn`
       themeBtn[i].classList.toggle("light");
       themeBtn[i].classList.toggle("dark");
+
+      //store to local storage
+      if (themeBtn[i].classList.contains("light")) {
+        localStorage.setItem("mode", "light");
+      } else {
+        localStorage.setItem("mode", "dark");
+      }
     }
   });
+}
+
+//get theme from local storage
+const currentTheme = localStorage.getItem("theme");
+
+if (currentTheme === "dark-theme") {
+  document.body.classList.replace("light-theme", "dark-theme");
+
+  for (let i = 0; i < themeBtn.length; i++) {
+    themeBtn[i].classList.replace("light", "dark");
+  }
 }
