@@ -9,3 +9,9 @@
 .section-title {
   margin-block: 16px;
 }
+
+@media (min-width: 1200px) {
+  .section-text {
+    width: min(75ch, 75%);
+  }
+}
