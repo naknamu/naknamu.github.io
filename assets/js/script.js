@@ -41,11 +41,11 @@ window.addEventListener("scroll", function () {
   }
 });
 
-const blog = document.querySelector("[data-nav-blog]");
+// const blog = document.querySelector("[data-nav-blog]");
 
-blog.addEventListener("click", function () {
-  alert("Feature coming soon!");
-});
+// blog.addEventListener("click", function () {
+//   alert("Feature coming soon!");
+// });
 
 /**
  * Contact
