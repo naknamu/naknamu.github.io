@@ -8,16 +8,17 @@
 
 @media (min-width: 992px) {
   .project-card-3,
-  .project-card-4 {
+  .project-card-4,
+  .project-card-5 {
     flex-direction: row;
     align-items: center;
   }
 
-  :is(.project-card-3, .project-card-4) .card-content {
+  :is(.project-card-3, .project-card-4, .project-card-5) .card-content {
     width: 33.33%;
   }
 
-  :is(.project-card-3, .project-card-4) .card-banner {
+  :is(.project-card-3, .project-card-4, .project-card-5) .card-banner {
     width: 66.66%;
   }
 
